@@ -6,6 +6,7 @@ date: 2023-08-24
 tags: machine learning algorithms, interview preperation, job hunting, publication
 comments_id: 1
 ---
+# Unveiling Two-Class Classification Algorithms: A Comparative Study
 
 Lets consider a dataset to understand two class classification.
 
@@ -27,23 +28,20 @@ This dataset involves classifying whether a transaction is fraudulent or not bas
 
 In this dataset, each row represents a transaction with various features such as "Amount" (transaction amount), "Merchant" (merchant name), "Location" (transaction location), "Time" (transaction time), and "Fraudulent" (whether the transaction is fraudulent or not).
 
-# Understanding patterns in dataset:
+## Understanding patterns in dataset:
 
-## Linearity: 
+### Linearity: 
 Imagine you're plotting the features of a transaction against the likelihood of it being fraudulent. If a straight line can be drawn through the scatter plot that accurately separates the fraudulent transactions from the legitimate ones, we have a linear relationship. This suggests that as the values of certain features change, the probability of fraud also changes proportionally.
 Lots of machine learning algorithms make use of linearity. In Azure Machine Learning designer, they include:
-
-- logistic regression
-- Support vector machines
 
 1. Logistic Regression: This algorithm assumes a linear relationship between the input features and the log-odds of the target variable. If the data exhibits linear separability, logistic regression can draw a boundary that effectively distinguishes between the two classes, allowing for accurate classification of fraudulent and legitimate transactions.
 
 2. Linear Support Vector Machines (SVM): Similar to logistic regression, linear SVMs rely on the existence of linearly separable data. They seek a straight-line boundary that maximizes the margin between the two classes. If the fraud patterns are linear, SVM can efficiently detect anomalies.
 For Data with a nonlinear trend: Using a logistic regression or SVM methods would generate much larger errors than necessary.
 
-[<img align="center" src="/assets/linear.PNG" width="200"/>](/assets/linear.PNG)
+[<img align="center" src="/assets/linear.PNG" width="600"/>](/assets/linear.PNG)
 
-## Non-Linearity and Complex Patterns:
+### Non-Linearity and Complex Patterns:
 
 
 | Transaction_ID | Amount | Merchant  | Location   | Time   | Fraudulent |
@@ -68,8 +66,8 @@ Transaction 5: Despite the high transaction amount, the combination of "Unknown"
 
 Transaction 9: A large transaction amount paired with an unusual location (Tokyo) and an early time (08:10) is a complex pattern that points towards fraud.
 
-[<img align="center" src="/assets/non-linear.PNG" width="200"/>](/assets/non-linear.PNG)
-## Applying Non-Linear Models:
+[<img align="center" src="/assets/non-linear.PNG" width="600"/>](/assets/non-linear.PNG)
+### Applying Non-Linear Models:
 
 To detect fraud patterns like these, non-linear classification algorithms like decision trees, random forests, or support vector machines with non-linear kernels would be more effective. These algorithms can uncover complex relationships among features that might not be captured by linear models.
 
@@ -87,10 +85,10 @@ In the Fraud Detection domain, where fraudsters continuously evolve their tactic
 
 
 
-# Model Complexity: 
+## Model Complexity: 
 The number of features in a dataset can significantly impact the application of classification models, especially in scenarios like fraud detection. Let's explore how the number of features affects the process of applying classification models using the example of fraud detection:
 
-## Few Features:
+### Few Features:
 
 **Logistic Regression**: This algorithm works well when you have a small number of features. It's interpretable, efficient to train, and can handle linear relationships between features and the target variable.
 
@@ -98,7 +96,7 @@ The number of features in a dataset can significantly impact the application of 
 
 **Decision Trees**: Decision trees are intuitive and can handle few features effectively. They can capture non-linear relationships in the data and provide insights into feature importance.
 
-## Many Features:
+### Many Features:
 
 **Random Forest**: Random forests are an ensemble of decision trees and can handle a larger number of features. They reduce overfitting and provide robust predictions by aggregating the output of multiple trees.
 
@@ -127,9 +125,6 @@ When it comes to handling overfitting and ensuring good generalization, you'll w
 **Ensemble Method**s: Bagging and boosting ensemble methods (like AdaBoost) combine multiple models to improve generalization and reduce overfitting by focusing on correctly classifying difficult instances.
 
 ## Feature Importance:
-
-**Few Features**: In simpler models, it's easier to identify which features have a significant impact on fraud detection. Interpretability is higher when fewer features are present.
-**Many Features**: In more complex models with many features, identifying which ones are truly important becomes challenging. Feature selection or extraction techniques might be needed to manage this complexity.
 
 **Decision Trees and Random Forests**: Decision trees and random forests provide a natural way to assess feature importance. Features that split data into pure classes (resulting in pure nodes) are considered more important. Random forests aggregate feature importance from multiple trees, offering a robust measure of feature relevance.
 
@@ -167,5 +162,5 @@ The *"Curse of Dimensionality"* refers to the challenges that arise when dealing
 
 **Domain Knowledge and Preprocessing**: Utilizing domain knowledge to carefully select features or engineer new ones can mitigate the curse of dimensionality. Preprocessing techniques like scaling and normalization are also crucial to ensure that algorithms perform optimally.
 
-Example of links: [here](https://github.com/mayuri0192)!
+<!-- -- Example of links: [here](https://github.com/mayuri0192)!-- -->
 
