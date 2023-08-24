@@ -1,2 +1,2 @@
-# mayuri.github.io
-personal portfolio
+mayuri0192.github.io
+My personal website
