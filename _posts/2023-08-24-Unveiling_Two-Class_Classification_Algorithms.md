@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Unveiling Two-Class Classification Algorithms: A Comparative Study
+title: Unveiling Two-Class Classification Algorithms - A Comparative Study
 description: Understanding Two-Class Classification Algorithms with respect to Dataset type, Accuracy, Training time, Linearity, Number of parameters, Number of features and Computation.
 date: 2023-08-24
 tags: machine learning algorithms, interview preperation, job hunting, publication
 comments_id: 1
 ---
-# Unveiling Two-Class Classification Algorithms: A Comparative Study
+# **Unveiling Two-Class Classification Algorithms: A Comparative Study**
 
 Lets consider a dataset to understand two class classification.
 
