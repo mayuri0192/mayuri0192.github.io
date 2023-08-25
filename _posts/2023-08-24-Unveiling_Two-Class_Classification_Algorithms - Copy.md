@@ -6,7 +6,7 @@ date: 2023-08-24
 tags: machine learning algorithms, interview preperation, job hunting, publication
 comments_id: 1
 ---
-# **Unveiling Two-Class Classification Algorithms: A Comparative Study**
+# **Unveiling Two-Class/Multi-Class Classification Algorithms: A Comparative Study**
 
 Lets consider a dataset to understand two class classification.
 
@@ -32,12 +32,12 @@ In this dataset, each row represents a transaction with various features such as
 
 ### Linearity: 
 Imagine you're plotting the features of a transaction against the likelihood of it being fraudulent. If a straight line can be drawn through the scatter plot that accurately separates the fraudulent transactions from the legitimate ones, we have a linear relationship. This suggests that as the values of certain features change, the probability of fraud also changes proportionally.
-Lots of machine learning algorithms make use of linearity. In Azure Machine Learning designer, they include:
+Lots of machine learning algorithms make use of linearity, they include:
 
 1. Logistic Regression: This algorithm assumes a linear relationship between the input features and the log-odds of the target variable. If the data exhibits linear separability, logistic regression can draw a boundary that effectively distinguishes between the two classes, allowing for accurate classification of fraudulent and legitimate transactions.
 
 2. Linear Support Vector Machines (SVM): Similar to logistic regression, linear SVMs rely on the existence of linearly separable data. They seek a straight-line boundary that maximizes the margin between the two classes. If the fraud patterns are linear, SVM can efficiently detect anomalies.
-For Data with a nonlinear trend: Using a logistic regression or SVM methods would generate much larger errors than necessary.
+
 
 [<img align="center" src="/assets/linear.PNG" width="600"/>](/assets/linear.PNG)
 
@@ -62,14 +62,14 @@ In this dataset, non-linearity and complex patterns can arise when certain trans
 
 Transaction 3: A high transaction amount combined with an unusual merchant location (London) and an atypical time (20:45) suggests fraud. This complex pattern might be missed by linear models.
 
-Transaction 5: Despite the high transaction amount, the combination of "Unknown" merchant and location (New York) along with an early time (09:30) indicates potential fraud. Non-linearity is needed to capture this intricate relationship.
+Transaction 7: Despite the low transaction amount, the combination of "Unknown" merchant and location (Paris) along with a afternoon time (14:20) indicates potential fraud. Non-linearity is needed to capture this intricate relationship.
 
 Transaction 9: A large transaction amount paired with an unusual location (Tokyo) and an early time (08:10) is a complex pattern that points towards fraud.
 
 [<img align="center" src="/assets/non-linear.PNG" width="600"/>](/assets/non-linear.PNG)
 ### Applying Non-Linear Models:
 
-To detect fraud patterns like these, non-linear classification algorithms like decision trees, random forests, or support vector machines with non-linear kernels would be more effective. These algorithms can uncover complex relationships among features that might not be captured by linear models.
+For Data with a nonlinear trend, using a logistic regression or SVM methods would generate much larger errors than necessary. To detect fraud patterns like these, non-linear classification algorithms like decision trees, random forests, or support vector machines with non-linear kernels would be more effective. These algorithms can uncover complex relationships among features that might not be captured by linear models.
 
 In the Fraud Detection domain, where fraudsters continuously evolve their tactics, non-linearity and complex patterns are common. By using algorithms that can decipher these intricate connections, data scientists can enhance fraud detection accuracy and mitigate financial risks.
 
@@ -108,8 +108,7 @@ The number of features in a dataset can significantly impact the application of 
 
 ## Overfitting and Generalization:
 When it comes to handling overfitting and ensuring good generalization, you'll want to choose classification algorithms that offer ways to mitigate overfitting and promote better generalization on new, unseen data. Here are some suitable classification algorithms for addressing overfitting and achieving better generalization:
-**Few Features**: When the number of features is limited, models are less likely to overfit the training data. They may generalize better to new, unseen data.
-**Many Features**: With many features, there's a higher risk of overfitting, where the model memorizes the training data but struggles to perform well on new data. Regularization techniques become more important to prevent overfitting.
+
 **Regularized Logistic Regression**: Regularization techniques like L1 (Lasso) and L2 (Ridge) regularization can help prevent overfitting by adding penalty terms to the model's loss function. These penalties discourage overly complex models, leading to better generalization.
 
 **Regularized Linear Support Vector Machines (SVM)**: Regularization in SVMs can help control overfitting. By tuning the regularization parameter (C), you can adjust the trade-off between maximizing the margin and minimizing the classification error.
@@ -156,11 +155,15 @@ The *"Curse of Dimensionality"* refers to the challenges that arise when dealing
 
 **Regularization Techniques**: Algorithms like L1 regularization (Lasso) encourage sparsity by driving certain coefficients to zero. This helps to select the most relevant features and mitigate the curse of dimensionality.
 
-**Dimensionality Reductio**n: Techniques like t-SNE (t-Distributed Stochastic Neighbor Embedding) and UMAP (Uniform Manifold Approximation and Projection) can reduce high-dimensional data into lower-dimensional representations that retain essential structure.
+**Dimensionality Reduction**: Techniques like t-SNE (t-Distributed Stochastic Neighbor Embedding) and UMAP (Uniform Manifold Approximation and Projection) can reduce high-dimensional data into lower-dimensional representations that retain essential structure.
 
 **Neighborhood-Based Methods**: Algorithms like K-Nearest Neighbors (KNN) and Local Outlier Factor (LOF) consider local structures rather than global patterns. They can be effective in detecting anomalies within high-dimensional data.
 
 **Domain Knowledge and Preprocessing**: Utilizing domain knowledge to carefully select features or engineer new ones can mitigate the curse of dimensionality. Preprocessing techniques like scaling and normalization are also crucial to ensure that algorithms perform optimally.
 
-<!-- -- Example of links: [here](https://github.com/mayuri0192)!-- -->
+## *References*
+- [https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/multiclass-decision-forest?view=azureml-api-2](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/multiclass-decision-forest?view=azureml-api-2)
+- [https://stanford.edu/~shervine/teaching/cs-229/](https://stanford.edu/~shervine/teaching/cs-229/)
+- [https://www.kaggle.com/code/durgancegaur/a-guide-to-any-classification-problem](https://www.kaggle.com/code/durgancegaur/a-guide-to-any-classification-problem)
+
 
