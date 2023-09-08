@@ -12,7 +12,7 @@ There has been a rapid growth in the domain of Generative AI and the large langu
 
 Over the years, the field of language modeling has seen significant evolution and advancement. 
 
-[<img align="center" src="/assets/LLM_timeline.png" width="600"/>](/assets/LLM_timeline.png)
+[<img align="center" src="/assets/LLM_timeline.png" width="800"/>](/assets/LLM_timeline.png)
 
 
 **Before 1990s**: The early days of language modeling were marked by rule-based systems and handcrafted grammars. These models were limited in their ability to understand language nuances and lacked the capabilities to handle real-world language data effectively.
@@ -33,14 +33,14 @@ RNNs and LSTMs introduced the concept of sequential data processing, making them
 
 Transformers, with their attention mechanisms, addressed the limitation of handling long-range dependencies. They could efficiently capture contextual information from across the input sequence, leading to significant improvements in various natural language processing (NLP) tasks.
 
-[<img align="center" src="/assets/diff_lstms_trx.PNG" width="600"/>](/assets/diff_lstms_trx.PNG)
+[<img align="center" src="/assets/diff_lstms_trx.PNG" width="800"/>](/assets/diff_lstms_trx.PNG)
 
 Add difference table. 
  <!-- Added comment2 -->
 
 ## Transformer Architecture
 
-[<img align="center" src="/assets/transformer_architecture.png" width="600"/>](/assets/transformer_architecture.png)
+[<img align="center" src="/assets/transformer_architecture.png" width="400"/>](/assets/transformer_architecture.png)
 
 Now lets dive into the architecture of a transformer. 
 Imagine you're reading a book, and you want to understand the meaning of a sentence. You don't just look at one word; you consider how each word in the sentence relates to the others. That's what the Transformer does, but it does it incredibly fast and with a lot of sentences all at once.
