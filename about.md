@@ -6,7 +6,6 @@ permalink: /about/
 
 [<img align="center" src="/assets/md.jpg" width="200"/>](/assets/md.jpg)
 
-
 [Linkedin](https://www.linkedin.com/in/mayuri-deshpande-0192/)
 [Github](https://github.com/mayuri0192)
 
