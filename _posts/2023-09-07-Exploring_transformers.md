@@ -36,6 +36,7 @@ Transformers, with their attention mechanisms, addressed the limitation of handl
 [<img align="center" src="/assets/diff_lstms_trx.PNG" width="600"/>](/assets/diff_lstms_trx.PNG)
 
 Add difference table. 
+ <!-- Added comment -->
 
 ## Transformer Architecture
 
