@@ -17,11 +17,15 @@ Falcon 180B, introduced by the Technology Innovation Institute (TII), is an open
 
 [<img align="center" src="/assets/multi-query-attention.png" width="800"/>](/assets/multi-query-attentionf.png)
 
+[*Multi-Query Attention shares keys and value embeddings across attention heads. image from hugging face Falcon 180B blog*](https://huggingface.co/blog/falcon)
+
 **LLaMA 2: Meta and Microsoft's Collaborative Model**
 
 LLaMA 2, developed by Meta, is a second-generation open-source large language model. Llama 2 introduces a family of pretrained and fine-tuned LLMs, ranging in scale from 7B to 70B parameters (7B, 13B, 70B). The pretrained models have a much longer context length (4k tokens), and use grouped-query attention for fast inference of the 70B model!, it is known for its safety focus, making it a suitable choice for tasks like customer service and technical support. The fine-tuned models (Llama 2-Chat), which have been optimized for dialogue applications using Reinforcement Learning from Human Feedback (RLHF). Across a wide range of helpfulness and safety benchmarks, the Llama 2-Chat models perform better than most open models and achieve comparable performance to ChatGPT according to human evaluations. LLaMA 2's applications range from generating creative content to solving problems and supporting learning and education. [*Read Paper*](https://huggingface.co/papers/2307.09288) 
 
 [<img align="center" src="/assets/llama-rlhf.png" width="800"/>](/assets/llama-rlhf.png)
+
+[*image from Llama 2: Open Foundation and Fine-Tuned Chat Models*](https://huggingface.co/blog/llama2)
 
 
 
@@ -98,3 +102,17 @@ The AI landscape is evolving rapidly, with each of these models pushing the boun
 Choosing the right model depends on specific needs and preferences. Falcon 180B and GPT-4 are powerhouses suitable for a wide array of tasks. LLaMA 2 and Claude 2 shine in safety-critical applications. GPT-3.5, while less advanced, still offers significant capabilities.
 
 As AI continues to advance, these models represent the cutting edge of technology, empowering businesses and researchers to explore new horizons in language processing, automation, and collaboration.
+
+**References:**
+
+[*https://huggingface.co/blog/falcon-180b*](https://huggingface.co/blog/falcon-180b)
+
+[*https://huggingface.co/blog/falcon*](https://huggingface.co/blog/falcon)
+
+[*https://huggingface.co/blog/llama2*](https://huggingface.co/blog/llama2)
+
+[*https://platform.openai.com/docs/models/overview*](https://platform.openai.com/docs/models/overview)
+
+[*https://neoteric.eu/blog/6-main-differences-between-llama2-gpt35-and-gpt4/*](https://neoteric.eu/blog/6-main-differences-between-llama2-gpt35-and-gpt4/)
+
+[*https://www.anthropic.com/index/claude-2*](https://www.anthropic.com/index/claude-2)
